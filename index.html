@@ -2,66 +2,113 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Client Enquiry Repository</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Client Registration | IT Skills Academy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
       padding: 0;
-      font-family: 'Poppins', sans-serif;
       box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
     }
+
     body {
-      background: linear-gradient(to right, #4e54c8, #8f94fb);
-      min-height: 100vh;
+      background: linear-gradient(135deg, #4e54c8, #8f94fb);
+      color: #fff;
+    }
+
+    header {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .hero {
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
-      padding: 2rem;
-    }
-    .form-container {
-      background-color: #fff;
-      padding: 1.5rem;
-      border-radius: 15px;
-      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-      width: 100%;
-      max-width: 720px;
-    }
-    .form-container h2 {
+      padding: 4rem 2rem 2rem;
       text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
       margin-bottom: 1rem;
-      font-weight: 600;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin-bottom: 2rem;
+    }
+
+    .form-section {
+      background: #fff;
+      border-radius: 20px 20px 0 0;
+      padding: 2rem 1rem;
+      color: #333;
+    }
+
+    .form-section h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 1rem;
       color: #4e54c8;
     }
-    .google-form iframe {
+
+    .form-wrapper iframe {
       width: 100%;
       height: 800px;
       border: none;
     }
-    .footer-note {
+
+    footer {
       text-align: center;
-      margin-top: 1rem;
+      padding: 1rem;
+      background: #3e4299;
+      color: #fff;
       font-size: 0.9rem;
-      color: #555;
+    }
+
+    @media (min-width: 768px) {
+      .hero h1 {
+        font-size: 3.5rem;
+      }
+
+      .form-section {
+        padding: 3rem;
+      }
     }
   </style>
 </head>
 <body>
 
-  <div class="form-container">
-    <h2><i class="fas fa-address-book"></i> Client Enquiry Form</h2>
-    <div class="google-form">
-      <iframe src="https://forms.gle/Pz2d8bE7tqo5c2Ub6/viewform?embedded=true" 
-              frameborder="0" 
-              marginheight="0" 
-              marginwidth="0">
+  <!-- Hero Section -->
+  <header>
+    <h1>IT Skills Academy</h1>
+  </header>
+
+  <section class="hero">
+    <h1>Client Enquiry & Registration</h1>
+    <p>Fill out the form below to register your interest, ask questions, or get personalized support from our team.</p>
+  </section>
+
+  <!-- Form Section -->
+  <section class="form-section">
+    <h2>Registration Form</h2>
+    <div class="form-wrapper">
+      <iframe src="https://forms.gle/Pz2d8bE7tqo5c2Ub6/viewform?embedded=true" loading="lazy">
         Loading…
       </iframe>
     </div>
-    <p class="footer-note">We value your privacy. Your details are secure with us.</p>
-  </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 IT Skills Academy. All rights reserved.
+  </footer>
 
 </body>
 </html>
